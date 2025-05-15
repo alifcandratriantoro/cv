@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV Alif Candra Triantoro</title>
+    <style>
+      /* Reset dan font */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: linear-gradient(135deg, #05709e 0%, #637883 100%);
+        color: #222;
+        padding: 30px 15px;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .cv-container {
+        background: #ffffffdd;
+        max-width: 700px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        padding: 40px 50px;
+        backdrop-filter: saturate(180%) blur(15px);
+      }
+
+      /* Foto dan nama di tengah */
+      .profile {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .profile img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3.5px solid #1a73e8;
+        box-shadow: 0 5px 15px rgba(26, 115, 232, 0.3);
+        margin-bottom: 18px;
+      }
+      .profile h1 {
+        font-weight: 700;
+        font-size: 2.8rem;
+        color: #000000;
+        margin-bottom: 6px;
+      }
+      .profile p {
+        font-weight: 500;
+        font-size: 1.15rem;
+        color: #555;
+        letter-spacing: 0.03em;
+      }
+
+      /* Section style */
+      section {
+        margin-bottom: 38px;
+      }
+      section h2 {
+        font-weight: 700;
+        font-size: 1.7rem;
+        color: #1a73e8;
+        border-bottom: 3px solid #1a73e8;
+        padding-bottom: 7px;
+        margin-bottom: 25px;
+      }
+
+      /* Data pribadi list dengan flexbox agar sejajar */
+      .personal-info {
+        list-style: none;
+        padding-left: 0;
+        max-width: 100%;
+      }
+      .personal-info li {
+        display: flex;
+        font-size: 1.05rem;
+        margin-bottom: 16px;
+        gap: 12px; /* jarak label dan isi */
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .personal-info li strong {
+        flex: 0 0 160px; /* lebar tetap label */
+        color: #333;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+      .personal-info li span {
+        flex: 1 1 auto; /* isi mengisi sisa lebar */
+        color: #444;
+        line-height: 1.4;
+        word-break: break-word;
+      }
+
+      /* Skills bars */
+      .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .skill-item {
+        font-weight: 600;
+      }
+      .skill-bar {
+        background: #dbe9ff;
+        border-radius: 15px;
+        height: 16px;
+        margin-top: 6px;
+        overflow: hidden;
+      }
+      .skill-progress {
+        height: 100%;
+        border-radius: 15px;
+        background: #1a73e8;
+      }
+
+      /* Pendidikan */
+      .education-list {
+        list-style: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #444;
+        padding-left: 18px;
+      }
+      .education-list li {
+        position: relative;
+        margin-bottom: 14px;
+        padding-left: 15px;
+      }
+      .education-list li::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #1a73e8;
+        font-size: 18px;
+        line-height: 1;
+      }
+
+      /* Pengalaman */
+      .experience-item {
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: #2b2b2b;
+        line-height: 1.4;
+      }
+
+      /* Responsive */
+      @media (max-width: 480px) {
+        .cv-container {
+          padding: 25px 20px;
+        }
+        .profile h1 {
+          font-size: 2.3rem;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="profile">
+        <img src="foto/fototoro.jpg" alt="Foto Alif Candra Triantoro" />
+        <h1>Alif Candra Triantoro</h1>
+        <p>Data Pribadi & Curriculum Vitae</p>
+      </div>
+
+      <section>
+        <h2>Data Pribadi</h2>
+        <ul class="personal-info">
+          <li>
+            <strong>Tempat, Tanggal Lahir:</strong>
+            <span>Denpasar, 31 Maret 2002</span>
+          </li>
+          <li>
+            <strong>Alamat:</strong>
+            <span>Jalan Gunung Lawu No 36B, Pemecutan Klod</span>
+          </li>
+          <li><strong>Jenis Kelamin:</strong> <span>Laki-Laki</span></li>
+          <li><strong>WhatsApp:</strong> <span>081237577376</span></li>
+          <li>
+            <strong>Email:</strong>
+            <span>alifcandratriantoro310302@gmail.com</span>
+          </li>
+          <li><strong>Status:</strong> <span>Belum Menikah</span></li>
+          <li><strong>Kewarganegaraan:</strong> <span>Indonesia</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Keahlian</h2>
+        <div class="skills">
+          <div class="skill-item">
+            Komunikasi
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 97%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            Manajemen Waktu
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 94%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            Mudah Bergaul
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Pendidikan</h2>
+        <ul class="education-list">
+          <li>SD 15 Dauh Puri</li>
+          <li>SMPN 4 Denpasar</li>
+          <li>SMAK Global Tourism Anugrah</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Pengalaman</h2>
+        <div class="experience-item">Aget Development</div>
+        <div class="experience-item">2021 - 2021 Outbound</div>
+        <div class="experience-item">2022 - 2023 Traning In House</div>
+        <div class="experience-item">2023 - 2025 research92%</div>
+      </section>
+    </div>
+  </body>
+</html>
