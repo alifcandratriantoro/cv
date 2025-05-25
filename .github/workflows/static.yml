@@ -25,6 +25,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: List repo files for debugging
+        run: ls -la
+
+      - name: List CV folder contents
+        run: ls -la ./cv
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
